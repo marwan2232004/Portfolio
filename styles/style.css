@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Bai Jamjuree", sans-serif;
+  letter-spacing: 2px;
+  line-height: calc(1em+.5rem);
+  cursor:default;
+}
+img,svg{
+  user-select: none;
+}
+body {
+  background-image: linear-gradient(
+    to right,
+    #bfd9f2,
+    #b9d5f3,
+    #b4d0f4,
+    #b0cbf5,
+    #adc6f6,
+    #a9c2f5,
+    #a6bdf3,
+    #a3b9f2,
+    #9cb5ef,
+    #96b1ec,
+    #8fade8,
+    #88a9e5
+  );
+}
+
+

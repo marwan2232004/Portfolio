@@ -22,28 +22,20 @@ const elementInview = (element, scrollOffset = 0) => {
   );
 };
 /*---------------------------Scroll Animation-------------------------*/
-const add_Scroll_Animation = () => {
-  for (let i = 0; i < scroll_elements.length; i++) {
-    scroll_elements[i].style.animation = `slide-up ${
-      1.2 + 0.6 * i
-    }s ease-in-out `;
-    scroll_elements[i].style.opacity = 1;
-  }
+const add_Scroll_Animation = (element, i) => {
+  element.style.animation = `slide-up ${1.2 + 0.6 * i}s ease-in-out both`;
 };
-const remove_Scroll_Animation = () => {
-  scroll_elements.forEach((element) => {
-    element.style.animation = "none";
-    element.style.opacity = 0;
-  });
+const remove_Scroll_Animation = (element) => {
+  element.style.animation = "none";
 };
 const handel_Scroll_Animation = () => {
-  scroll_elements.forEach((element) => {
-    if (elementInview(element, 60)) {
-      add_Scroll_Animation();
+  for (let i = 0; i < scroll_elements.length; i++) {
+    if (elementInview(scroll_elements[i])) {
+      add_Scroll_Animation(scroll_elements[i], i);
     } else {
-      remove_Scroll_Animation();
+      remove_Scroll_Animation(scroll_elements[i]);
     }
-  });
+  }
 };
 /*---------------------------Closing-Window Animation-------------------------*/
 const add_CWindow_Animation = (element, i) => {
@@ -76,14 +68,14 @@ const IsFilled = () => {
   return flag;
 };
 const clear_input = () => {
-  if (IsFilled()) { 
-   for(let i = 0; i < inputs.length; i++) {  
-        inputs[i].value="";
-   } 
-   textarea.value=""; 
+  if (IsFilled()) {
+    for (let i = 0; i < inputs.length; i++) {
+      inputs[i].value = "";
+    }
+    textarea.value = "";
   }
 };
-const Waitforsubmission=() => {
+const Waitforsubmission = () => {
   setTimeout(clear_input, 10);
 };
 /* --------------------------------------EventListeners-------------------------------------------- */

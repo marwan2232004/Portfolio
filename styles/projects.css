@@ -1,0 +1,103 @@
+/*----------------------------------Projects------------------------------------*/
+.projects {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transform: scale(0.85);
+}
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  width: 32em;
+  height: 35em;
+  background-color: whitesmoke;
+  border-radius: 50px;
+  box-shadow: 0 5px 25px rgba(66 0 255 / 55%);
+  transition: transform 0.5s ease-in-out;
+}
+.fit:hover .layout {
+  box-shadow: 0 5px 25px rgba(66 0 255 / 100%);
+  transform: scale(0.9);
+}
+.position {
+  grid-row: 2/5;
+}
+.project-images {
+  position: relative;
+  border-radius: 10px;
+  width: 35em;
+  height: 19em;
+  margin-bottom: -10rem;
+  z-index: 200;
+  transition: transform 0.5s ease-in-out;
+}
+.fit:hover .project-images {
+  transform: translateY(-130px);
+}
+
+.external-link-icon {
+  width: 20px;
+  height: 20px;
+}
+.link-container {
+  display: flex;
+  grid-row: 1/2;
+  align-items: center;
+  justify-content: center;
+}
+.preview {
+  display: inline-block;
+  text-decoration: none;
+}
+.preview-text {
+  color: #2e00b0;
+  font-weight: 800;
+  font-size: 20px;
+}
+.bottom-model {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid;
+  border-color: #2e00b0;
+  border-radius: 40px;
+  width: 170px;
+  padding: 20px;
+}
+.description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.description-container .title {
+  color: #6d43af;
+  font-size: 2.5rem;
+}
+.description-container .description {
+  text-align: center;
+}
+/*----------------------------------Projects------------------------------------*/

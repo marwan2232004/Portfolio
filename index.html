@@ -5,20 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Marwan Alhameedy</title>
     <link rel="icon" type="images/x-icon" href="images/cv.ico" />
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="styles/utile.css" />
+    <link rel="stylesheet" type="text/css" href="styles/hero.css" />
+    <link rel="stylesheet" type="text/css" href="styles/services.css" />
+    <link rel="stylesheet" type="text/css" href="styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="styles/contact.css" />
   </head>
   <body>
-    <section class="main">
+    <!---------------------------------Hero---------------------------------------->
+    <section class="hero">
       <div class="bar">
         <nav class="navigation">
-          <a href="#home" class="underline-hover-animation">Home</a>
+          <a href="#about" class="underline-hover-animation">About</a>
           <a href="#services" class="underline-hover-animation">Services</a>
           <a href="#projects" class="underline-hover-animation">Projects</a>
           <a href="#contact" class="underline-hover-animation">Contact</a>
         </nav>
       </div>
-      <section class="home" id="home">
-        <div class="about reload-slide-left">
+      <section class="about" id="about">
+        <div class="personal-info reload-slide-left">
           <div class="specialization">Computer Engineer</div>
           <div class="name">Hello, I'm<br />Marwan Alhameedy</div>
           <div class="intro">
@@ -33,54 +39,64 @@
         </div>
       </section>
     </section>
+    <!---------------------------------------------------------------------------------->
+    <!-----------------------------------Services--------------------------------------->
     <section class="services" id="services">
       <div class="header">
         <h2 class="underline-header">Services</h2>
       </div>
       <div class="cards">
-        <div class="card js-ordered-scroll">
-          <div class="icons">
-            <img
-              src="images/icons8-arduino.svg"
-              alt="Arduino"
-              title="Arduino"
-            />
-          </div>
-          <h2 class="title">Arduino</h2>
-          <div class="description">
-            I have good knowledge with Arduino and how to make efficient code to
-            run on it. I took a course in robotics in beta academy and we made
-            good projects.
-          </div>
-        </div>
-        <div class="card js-ordered-scroll">
-          <div class="icons">
-            <img src="images/code.png" alt="Coding" title="Coding" />
-          </div>
-          <h2 class="title">Programming</h2>
-          <div class="description">
-            I'm good at writing effective code with C/C++, Python. In addition,
-            I am great with data structures and algorithms, STL, OOP. I am
-            interested in problem solving.
+        <div class="card-container js-ordered-scroll">
+          <div class="card-hover">
+            <div class="icons">
+              <img
+                src="images/icons8-arduino.svg"
+                alt="Arduino"
+                title="Arduino"
+              />
+            </div>
+            <h2 class="title">Arduino</h2>
+            <div class="description">
+              I have good knowledge with Arduino and how to make efficient code
+              to run on it. I took a course in robotics in beta academy and we
+              made good projects.
+            </div>
           </div>
         </div>
-        <div class="card js-ordered-scroll">
-          <div class="icons">
-            <img
-              src="images/coding.png"
-              alt="Web Development"
-              title="Web Development"
-            />
+        <div class="js-ordered-scroll card-container">
+          <div class="card-hover">
+            <div class="icons">
+              <img src="images/code.png" alt="Coding" title="Coding" />
+            </div>
+            <h2 class="title">Programming</h2>
+            <div class="description">
+              I'm good at writing effective code with C/C++, Python. In
+              addition, I am great with data structures and algorithms, STL,
+              OOP. I am interested in problem solving.
+            </div>
           </div>
-          <h2 class="title">Web Development</h2>
-          <div class="description">
-            I just started with Web because I found it is interesting to know
-            how websites work. Right now I can deal with HTML, CSS and
-            JavaScript, also I can make a responsive webpage.
+        </div>
+        <div class="card-container js-ordered-scroll">
+          <div class="card-hover">
+            <div class="icons">
+              <img
+                src="images/coding.png"
+                alt="Web Development"
+                title="Web Development"
+              />
+            </div>
+            <h2 class="title">Web Development</h2>
+            <div class="description">
+              I just started with Web because I found it is interesting to know
+              how websites work. Right now I can deal with HTML, CSS and
+              JavaScript, also I can make a responsive webpage.
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!----------------------------------------------------------------------------------->
+    <!-------------------------------------Projects-------------------------------------->
     <section class="projects" id="projects">
       <div class="header">
         <h2 class="underline-header">Projects</h2>
@@ -97,7 +113,7 @@
               />
             </div>
             <div class="layout">
-              <div class="link-contianer">
+              <div class="link-container">
                 <a
                   href="https://github.com/marwan2232004/PaintProject2"
                   target="_blank"
@@ -140,7 +156,7 @@
               />
             </div>
             <div class="layout">
-              <div class="link-contianer">
+              <div class="link-container">
                 <a
                   href="https://github.com/marwan2232004/DS-project/tree/main"
                   target="_blank"
@@ -172,6 +188,8 @@
         </div>
       </div>
     </section>
+    <!------------------------------------------------------------------------------------->
+    <!-------------------------------------Contact----------------------------------------->
     <section class="contact" id="contact">
       <div class="header">
         <h2 class="underline-header">contact</h2>
@@ -210,7 +228,11 @@
         </div>
 
         <div class="contact-form">
-          <form action="https://formspree.io/f/maygyjqo" method="POST" target="_blank">
+          <form
+            action="https://formspree.io/f/maygyjqo"
+            method="POST"
+            target="_blank"
+          >
             <div class="input-box">
               <input
                 type="text"

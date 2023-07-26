@@ -1,0 +1,126 @@
+/*----------------------------------Contact------------------------------------*/
+.contact {
+  margin-bottom: 100px;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.contact-form {
+  width: 25em;
+  height: 30em;
+  margin: auto;
+  background: rgba(225, 225, 255, 0.8);
+  border: 2px solid rgba(225, 225, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  padding: 60px;
+  box-shadow: 0 5px 25px rgba(0 227 255 / 50%);
+}
+.input-control {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #1e3050;
+  outline: none;
+  background: transparent;
+  margin-bottom: 60px;
+  padding-bottom: 5px;
+  font-size: 1.1rem;
+}
+.input-box {
+  position: relative;
+}
+.label-control {
+  font-weight: 500;
+  font-size: 1.1rem;
+  position: absolute;
+  left: 0;
+  top: -17px;
+  transition: 0.2s ease-in-out;
+}
+
+.input-control:focus + .label-control {
+  top: -35px;
+}
+.message {
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+textarea {
+  font-size: 1.1rem;
+  width: 100%;
+  height: 6em;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border: 2px solid #1e3050;
+  border-radius: 10px;
+  resize: none;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+.submit {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1.15em;
+  color: white;
+  font-weight: 600;
+}
+.outro {
+  padding-left: 60px;
+}
+.media {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  justify-content: left;
+  padding: 50px;
+}
+.information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.5em;
+  height: 2.5em;
+  padding: 20px;
+  cursor: pointer;
+}
+.information img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 0;
+}
+.information:hover {
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to right top,
+    #630dc2,
+    #6020cf,
+    #5b2ddd,
+    #5539ea,
+    #4b44f8
+  );
+  color: white;
+}
+.hire {
+  font-size: 3em;
+  font-weight: 800;
+}
+.media-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+.media-icons img {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+}
