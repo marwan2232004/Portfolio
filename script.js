@@ -3,19 +3,13 @@ const closingWindowElements = document.querySelectorAll(".js-closing-window");
 const submit_button = document.querySelector(".submit");
 const inputs = document.querySelectorAll(".input-control");
 const textarea = document.querySelector("textarea");
+const navigation_elements = document.querySelectorAll(".navi-elements");
+const main_sections = document.querySelectorAll(".main-section");
 scroll_elements.forEach((element) => {
   element.style.opacity = 0;
 });
 const elementInview = (element, scrollOffset = 0) => {
   const distance_top = element.getBoundingClientRect().top;
-  console.log(
-    scrollOffset,
-    distance_top,
-    window.innerHeight,
-    distance_top <=
-      (window.innerHeight || document.documentElement.clientHeight) -
-        scrollOffset
-  );
   return (
     distance_top <=
     (window.innerHeight || document.documentElement.clientHeight) - scrollOffset
@@ -78,7 +72,45 @@ const clear_input = () => {
 const Waitforsubmission = () => {
   setTimeout(clear_input, 10);
 };
+/*---------------------------Navigation Scroll -------------------------*/
+let normal,
+  hover_color = "#00353d";
+const New = "#000000";
+function Select(exception="") {
+  let id;
+  for (let i = 0; i < main_sections.length; i++) {
+    if (elementInview(main_sections[i], window.innerHeight / 2))
+      id = main_sections[i].id;
+  }
+  for (let i = 0; i < navigation_elements.length; i++) {
+    if (
+      exception != navigation_elements[i].innerHTML
+    ) {
+      navigation_elements[i].style.color = normal;
+    }
+    if (id.toLowerCase() == navigation_elements[i].innerHTML.toLowerCase()) {
+      navigation_elements[i].style.color = New;
+    }
+  }
+}
+function Hover() {
+  this.style.color = hover_color;
+  Select(this.innerHTML);
+}
+function anti_Hover() {
+  this.style.color = normal;
+  Select(this.innerHTML);
+}
 /* --------------------------------------EventListeners-------------------------------------------- */
-window.addEventListener("scroll", handel_Scroll_Animation);
-window.addEventListener("scroll", handel_CWindow_Animation);
+window.addEventListener("scroll",handel_Scroll_Animation);
+window.addEventListener("scroll",handel_CWindow_Animation);
+window.addEventListener("scroll",Select);
 submit_button.addEventListener("click", Waitforsubmission);
+for (let i = 0; i < navigation_elements.length; i++) {
+  normal = navigation_elements[i].style.color;
+  navigation_elements[i].addEventListener("mouseover", Hover);
+  navigation_elements[i].addEventListener("mouseleave", anti_Hover);
+}
+Select();
+handel_Scroll_Animation();
+handel_CWindow_Animation();

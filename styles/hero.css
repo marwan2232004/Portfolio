@@ -1,4 +1,4 @@
-.hero{
+.hero {
   width: 100%;
   height: 100vh;
 }
@@ -19,22 +19,16 @@
 .navigation {
   align-items: center;
 }
-.navigation a {
+.navi-elements {
   text-decoration: none;
   color: #357076;
   margin-right: 60px;
   font-size: 1.5em;
   font-weight: 800;
 }
-.navigation a:nth-child(4) {
+.navi-elements:nth-child(4) {
   margin: 0;
 }
-.navigation a:hover {
-  color: #00353d;
-}
-.navigation a:active {
-    color: #00353d;
-  }
 /*--------------------------------------------------------------------------*/
 /*----------------------------------Home------------------------------------*/
 .about {
