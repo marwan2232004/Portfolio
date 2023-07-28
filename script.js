@@ -74,7 +74,7 @@ const Waitforsubmission = () => {
 };
 /*---------------------------Navigation Scroll -------------------------*/
 let normal,
-  hover_color = "#00353d";
+  hover_color = "#00353d",hovered="";
 const New = "#000000";
 function Select(exception="") {
   let id;
@@ -88,16 +88,21 @@ function Select(exception="") {
     ) {
       navigation_elements[i].style.color = normal;
     }
+    if(navigation_elements[i].innerHTML == hovered){
+      navigation_elements[i].style.color = hover_color;
+    }
     if (id.toLowerCase() == navigation_elements[i].innerHTML.toLowerCase()) {
       navigation_elements[i].style.color = New;
     }
   }
 }
 function Hover() {
+  hovered=this.innerHTML;
   this.style.color = hover_color;
-  Select(this.innerHTML);
+  Select(hovered);
 }
 function anti_Hover() {
+  hovered="";
   this.style.color = normal;
   Select(this.innerHTML);
 }

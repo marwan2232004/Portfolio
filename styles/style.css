@@ -14,7 +14,7 @@ img,svg{
   user-select: none;
 }
 body {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     #bfd9f2,
     #b9d5f3,
@@ -28,7 +28,57 @@ body {
     #96b1ec,
     #8fade8,
     #88a9e5
-  );
+  ); 
+  background-repeat: no-repeat;
+  background-size: contain;*/
+  background-color: #88a9e5;
+}
+.container {
+   max-width: 1536px;
+   margin-bottom: 60px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: .5rem;
+   padding-right: .5rem;
+} 
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
 }
 
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
 
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}

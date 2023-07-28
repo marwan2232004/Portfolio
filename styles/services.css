@@ -1,6 +1,5 @@
 /*----------------------------------Services------------------------------------*/
 .services {
-  width: 100%;
   padding: 10px;
 }
 .cards {
@@ -34,21 +33,19 @@
   transition-delay: 0.2s;
   transition: transform 0.5s ease-in-out;
 }
-.card-container ,.card-hover{ 
+.card{ 
     /**to allow the card to make transition while making the animation*/
-    /*?Also because it seem that i cant make animation and transition on the same element*/
+    /*?Also because it seems that i cant make animation and transition on the same element*/
   height: 560px;
   border-radius: 30px;
   box-shadow: 0 5px 25px rgba(0 227 255 / 35%);
   background-color: #ebf8f9;
+  transition: transform 0.5s ease-in-out;
 }
-.card-hover{
-    transition: transform 0.5s ease-in-out;
-}
-.card-hover:hover .icons img {
+.card:hover .icons img {
   transform: scale(1.2);
 }
-.card-hover:hover {
+.card:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 25px rgba(0 227 255 / 95%);
 }

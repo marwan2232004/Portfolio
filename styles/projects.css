@@ -1,6 +1,5 @@
 /*----------------------------------Projects------------------------------------*/
 .projects {
-  width: 100%;
   padding: 10px;
   margin-bottom: 50px;
 }
@@ -10,7 +9,7 @@
   grid-template-columns: repeat(auto-fit, minmax(750px, 1fr));
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 10px;
 }
 
 .box {
