@@ -7,14 +7,18 @@
   padding: 0;
   font-family: "Bai Jamjuree", sans-serif;
   letter-spacing: 2px;
-  line-height: calc(1em+.5rem);
-  cursor:default;
+  line-height: calc(1em+0.5rem);
+  cursor: default;
 }
-img,svg{
+a {
+  text-decoration: none;
+}
+img,
+svg {
   user-select: none;
 }
 body {
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     #bfd9f2,
     #b9d5f3,
@@ -28,19 +32,17 @@ body {
     #96b1ec,
     #8fade8,
     #88a9e5
-  ); 
-  background-repeat: no-repeat;
-  background-size: contain;*/
-  background-color: #88a9e5;
+  );
+  width: 100%;
 }
 .container {
-   max-width: 1536px;
-   margin-bottom: 60px;
-   margin-left: auto;
-   margin-right: auto;
-   padding-left: .5rem;
-   padding-right: .5rem;
-} 
+  max-width: 1536px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 /* 2xl */
 @media (max-width: 1536px) {
   .container {

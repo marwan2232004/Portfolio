@@ -109,4 +109,40 @@
     opacity: 1;
   }
 }
-/*------------------------------------------------------------------------------*/
+/*----------------------------------Media Queries--------------------------------------------*/
+/* 2xl */
+/* @media (max-width: 1536px) {
+ 
+} */
+
+/* xl */
+/* @media (max-width: 1280px) {
+ 
+} */
+
+/* lg */
+/* @media (max-width: 1024px) {
+ 
+} */
+
+/* md */
+/* @media (max-width: 768px) {
+  
+} */
+
+/* sm */
+/* @media (max-width: 640px) {
+  
+} */
+
+/* xs */
+@media (max-width: 475px) {
+  .underline-header {
+    font-size: 3em;
+  }
+}
+@media (max-width: 320px) {
+  .underline-header {
+    font-size: 2.5em;
+  }
+}

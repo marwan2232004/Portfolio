@@ -7,19 +7,51 @@
     <link rel="icon" type="images/x-icon" href="images/cv.ico" />
     <link rel="stylesheet" type="text/css" href="styles/style.css" />
     <link rel="stylesheet" type="text/css" href="styles/utile.css" />
+    <link rel="stylesheet" type="text/css" href="styles/mobile-nav.css" />
     <link rel="stylesheet" type="text/css" href="styles/hero.css" />
     <link rel="stylesheet" type="text/css" href="styles/services.css" />
     <link rel="stylesheet" type="text/css" href="styles/projects.css" />
     <link rel="stylesheet" type="text/css" href="styles/contact.css" />
   </head>
   <body>
+    <!-- Mobile Navigation -->
+    <button class="mobile-nav-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+    </button>
+    <div class="mobile-nav">
+      <nav>
+        <ul class="mobile-nav-menu">
+          <li><a class="mobile-nav-link" href="#about">About</a></li>
+          <li><a class="mobile-nav-link" href="#services">Services</a></li>
+          <li><a class="mobile-nav-link" href="#projects">Projects</a></li>
+          <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
+          <li class="mobile-nav-line"></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- ----------------- -->
     <!---------------------------------Hero---------------------------------------->
-    <div class="bar">
+
+    <section class="hero main-section container" id="about">
+      <div class="bar container">
         <nav class="navigation">
           <a href="#about" class="navi-elements underline-hover-animation"
             >About</a
           >
-          <a href="#services" class="navi-elements underline-hover-animation v"
+          <a href="#services" class="navi-elements underline-hover-animation"
             >Services</a
           >
           <a href="#projects" class="navi-elements underline-hover-animation"
@@ -30,21 +62,20 @@
           >
         </nav>
       </div>
-      <section class="hero main-section container" id="about">
-        <div class="personal-info reload-slide-left">
-          <div class="specialization">Computer Engineer</div>
-          <div class="name">Hello, I'm<br />Marwan Alhameedy</div>
-          <div class="intro">
-            I am a student at Cairo University's Faculty of Engineering,
-            Computer Engineering Department. Right now, I am interested in
-            learning new technologies and getting an internship to extend my
-            knowledge. I hope you like my work.
-          </div>
+      <div class="personal-info reload-slide-left">
+        <div class="specialization">Computer Engineer</div>
+        <div class="name">Hello, I'm<br />Marwan Alhameedy</div>
+        <div class="intro">
+          I am a student at Cairo University's Faculty of Engineering, Computer
+          Engineering Department. Right now, I am interested in learning new
+          technologies and getting an internship to extend my knowledge. I hope
+          you like my work.
         </div>
-        <div class="photo fade">
-          <img src="images/Photo.png" alt="Marwan Alhameedy" />
-        </div>
-      </section>
+      </div>
+      <div class="photo fade">
+        <img src="images/Photo.png" alt="Marwan Alhameedy" />
+      </div>
+    </section>
     <!---------------------------------------------------------------------------------->
     <!-----------------------------------Services--------------------------------------->
     <section class="services main-section container" id="services">
@@ -95,7 +126,7 @@
             <div class="description">
               I just started with Web because I found it is interesting to know
               how websites work. Right now I can deal with HTML, CSS and
-              JavaScript, also I can make a responsive webpage.
+              JavaScript.
             </div>
           </div>
         </div>
@@ -268,6 +299,7 @@
         </div>
       </div>
     </section>
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="src/script.js"></script>
+    <script type="text/javascript" src="src/mobile-nav.js"></script>
   </body>
 </html>

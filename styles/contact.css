@@ -4,7 +4,7 @@
 }
 .contact-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 50px;
 }
 .contact-form {
@@ -15,7 +15,7 @@
   border: 2px solid rgba(225, 225, 255, 0.5);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  padding: 60px;
+  padding: 3.75rem;
   box-shadow: 0 5px 25px rgba(0 227 255 / 50%);
 }
 .input-control {
@@ -89,7 +89,6 @@ textarea {
   font-size: 1.5em;
   height: 2.5em;
   padding: 20px;
-  cursor: pointer;
 }
 .information img {
   width: 20px;
@@ -123,4 +122,132 @@ textarea {
   width: 20px;
   height: 20px;
   margin-right: 15px;
+}
+.red {
+  border: 3px solid red;
+}
+/*----------------------------------------Media Queries-------------------------------*/
+
+/* 2xl */
+/* @media (max-width: 1536px) {
+ 
+} */
+
+/* xl */
+@media (max-width: 1280px) {
+  .contact-form {
+    width: 20em;
+    height: 25em;
+    padding: 3rem;
+  }
+  .input-control {
+    margin-bottom: 40px;
+  }
+  textarea {
+    height: 5em;
+    padding: 10px;
+    margin-bottom: 25px;
+  }
+  .hire {
+    font-size: 2.5em;
+  }
+  .media {
+    padding-left: 30px;
+  }
+  .outro {
+    padding-left: 40px;
+  }
+  .information {
+    font-size: 1em;
+  }
+  .information img,
+  .media-icons img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* lg */
+/* @media (max-width: 1024px) {
+ 
+} */
+
+/* md */
+/* @media (max-width: 768px) {
+  
+} */
+
+/* sm */
+/* @media (max-width: 640px) {
+  
+} */
+
+/* xs */
+@media (max-width: 475px) {
+  .hire {
+    font-size: 2.1em;
+  }
+  .media {
+    padding-left: 10px;
+    padding-right: 0px;
+    padding-top: 30px;
+  }
+  .outro {
+    padding-left: 0px;
+  }
+  .information {
+    font-size: 0.8em;
+  }
+  .information img {
+    margin-right: 0px;
+  }
+  .information img,
+  .media-icons img {
+    width: 14px;
+    height: 14px;
+  }
+  .contact-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .contact-form {
+    width: 15em;
+    height: 20em;
+    padding: 2.5rem;
+  }
+  .input-control {
+    margin-bottom: 32px;
+  }
+  .label-control {
+    font-size: 0.9rem;
+    top: -10px;
+  }
+  .input-control:focus + .label-control {
+    top: -20px;
+  }
+  .message {
+    font-size: 0.9rem;
+  }
+  .submit {
+    height: 35px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  textarea {
+    height: 3.8em;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 0.7rem;
+  }
+  .hire {
+    font-size: 1.7em;
+  }
+  .media {
+    padding-top: 20px;
+  }
 }

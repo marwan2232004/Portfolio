@@ -1,4 +1,3 @@
-
 /*----------------------------------Navigation Bar------------------------------------*/
 .bar {
   position: fixed;
@@ -10,13 +9,13 @@
   z-index: 999;
   backdrop-filter: blur(3px);
   border-radius: 10px;
+  top: 0;
+  margin-bottom: 0;
 }
-
 .navigation {
   align-items: center;
 }
 .navi-elements {
-  text-decoration: none;
   color: #357076;
   margin-right: 60px;
   font-size: 1.5em;
@@ -78,32 +77,76 @@
 
 /* lg */
 @media (max-width: 1024px) {
-      .photo img{
-        width: 230px;
-        height: 230px;
-      }
-      .name{
-        font-size: 2.8rem;
-      }
-      .specialization{
-        font-size: 1.1rem;
-      }
-      .intro{
-        font-size: .8rem;
-      }
+  .photo img {
+    width: 230px;
+    height: 230px;
+  }
+  .name {
+    font-size: 2.8rem;
+  }
+  .specialization {
+    font-size: 1.1rem;
+  }
+  .intro {
+    font-size: 0.8rem;
+  }
 }
 
 /* md */
 @media (max-width: 768px) {
-  
+  .photo img {
+    width: 180px;
+    height: 180px;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .specialization {
+    font-size: 0.8rem;
+  }
+  .intro {
+    font-size: 0.6rem;
+  }
+  .bar {
+    display: none;
+  }
 }
 
 /* sm */
 @media (max-width: 640px) {
- 
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .photo img {
+    width: 260px;
+    height: 260px;
+  }
+  .name {
+    font-size: 2.8rem;
+  }
+  .specialization {
+    font-size: 1.1rem;
+  }
+  .intro {
+    font-size: 0.8rem;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
- 
+  .name {
+    font-size: 2.2rem;
+  }
+  .specialization {
+    font-size: 0.9rem;
+  }
+  .intro {
+    font-size: 0.7rem;
+  }
+}
+/* 2xs */
+@media (max-width: 375px) {
+  .name {
+    font-size: 2rem;
+  }
 }

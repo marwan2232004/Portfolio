@@ -74,21 +74,20 @@ const Waitforsubmission = () => {
 };
 /*---------------------------Navigation Scroll -------------------------*/
 let normal,
-  hover_color = "#00353d",hovered="";
+  hover_color = "#00353d",
+  hovered = "";
 const New = "#000000";
-function Select(exception="") {
+function Select(exception = "") {
   let id;
   for (let i = 0; i < main_sections.length; i++) {
     if (elementInview(main_sections[i], window.innerHeight / 2))
       id = main_sections[i].id;
   }
   for (let i = 0; i < navigation_elements.length; i++) {
-    if (
-      exception != navigation_elements[i].innerHTML
-    ) {
+    if (exception != navigation_elements[i].innerHTML) {
       navigation_elements[i].style.color = normal;
     }
-    if(navigation_elements[i].innerHTML == hovered){
+    if (navigation_elements[i].innerHTML == hovered) {
       navigation_elements[i].style.color = hover_color;
     }
     if (id.toLowerCase() == navigation_elements[i].innerHTML.toLowerCase()) {
@@ -97,19 +96,19 @@ function Select(exception="") {
   }
 }
 function Hover() {
-  hovered=this.innerHTML;
+  hovered = this.innerHTML;
   this.style.color = hover_color;
   Select(hovered);
 }
 function anti_Hover() {
-  hovered="";
+  hovered = "";
   this.style.color = normal;
   Select(this.innerHTML);
 }
 /* --------------------------------------EventListeners-------------------------------------------- */
-window.addEventListener("scroll",handel_Scroll_Animation);
-window.addEventListener("scroll",handel_CWindow_Animation);
-window.addEventListener("scroll",Select);
+window.addEventListener("scroll", handel_Scroll_Animation);
+window.addEventListener("scroll", handel_CWindow_Animation);
+window.addEventListener("scroll", Select);
 submit_button.addEventListener("click", Waitforsubmission);
 for (let i = 0; i < navigation_elements.length; i++) {
   normal = navigation_elements[i].style.color;
