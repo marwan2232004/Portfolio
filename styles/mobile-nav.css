@@ -5,10 +5,11 @@
   background-color: transparent;
   width: 1.5rem;
   height: 1.5rem;
-  color: #00353d;
+  color: #460483;
   border: none;
   display: none;
   z-index: 1001;
+  user-select: none;
 }
 .mobile-nav {
   position: fixed;
@@ -37,21 +38,21 @@
 .mobile-nav-link {
   font-size: 1.3rem;
   font-weight: 900;
-  color: #02293f;
+  color: #8C4FC4;
   transition: color 0.3s ease-in-out;
 }
 .mobile-nav-link:hover {
-  color: #38144d;
+  color: #460483;
 }
 .mobile-nav-line {
-  border: 1px solid #00353d;
+  border: 1px solid #460483;
   padding-right: 1.5em;
 }
 
 /* md */
 @media (max-width: 768px) {
   .mobile-nav-icon {
-    display: block;
+    display: inline;
   }
 }
 @media (max-width: 320px) {

@@ -74,9 +74,9 @@ const Waitforsubmission = () => {
 };
 /*---------------------------Navigation Scroll -------------------------*/
 let normal,
-  hover_color = "#00353d",
+  hover_color = "#6606BE",
   hovered = "";
-const New = "#000000";
+const New = "#460483";
 function Select(exception = "") {
   let id;
   for (let i = 0; i < main_sections.length; i++) {
