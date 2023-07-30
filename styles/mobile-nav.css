@@ -48,6 +48,7 @@
   border: 1px solid #460483;
   padding-right: 1.5em;
 }
+/*----------------------------------------Media Queries-------------------------------*/
 
 /* md */
 @media (max-width: 768px) {

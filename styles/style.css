@@ -43,6 +43,24 @@ body {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+/*----------------------------------------Scroll Bar-------------------------------*/
+body::-webkit-scrollbar {
+  width: 8px;
+}
+ 
+body::-webkit-scrollbar-track { 
+  -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
+  background-color: #88a9e5;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #8C4FC4;
+  outline: 1px solid #8C4FC4;
+  border-radius: 50px;
+}
+
+/*----------------------------------------Media Queries-------------------------------*/
+
 /* 2xl */
 @media (max-width: 1536px) {
   .container {
