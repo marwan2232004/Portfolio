@@ -1,5 +1,5 @@
 const scroll_elements = document.querySelectorAll(".js-ordered-scroll");
-const closingWindowElements = document.querySelectorAll(".js-closing-window");
+//const closingWindowElements = document.querySelectorAll(".js-closing-window");
 const submit_button = document.querySelector(".submit");
 const inputs = document.querySelectorAll(".input-control");
 const textarea = document.querySelector("textarea");
@@ -104,7 +104,7 @@ for (let i = 0; i < navigation_elements.length; i++) {
 }
 Select();
 handel_Scroll_Animation();
-handel_CWindow_Animation();
+//handel_CWindow_Animation();
 
 
 

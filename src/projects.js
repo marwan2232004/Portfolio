@@ -1,5 +1,7 @@
 const ProjectGrid = document.querySelector(".project-grid");
-const buttons = Object.values(document.querySelectorAll(".button"));
+const projectButtons = Object.values(
+  document.querySelectorAll(".project-button")
+);
 function CreateItem(name, field, url, description) {
   return ` <div class="box js-ordered-scroll">
   <div class="container2">
@@ -52,14 +54,6 @@ function AddItems() {
   ProjectGrid.innerHTML = grid;
 }
 
-function addClick(button) {
-  button.style.animation = "click .5s ease-in-out";
-  setTimeout(() => removeClick(button), 510);
-}
-function removeClick(button) {
-  button.style.animation = "none";
-}
-
 function filter(button) {
   let grid = "";
   for (let i = 0; i < projectsData.length; i++) {
@@ -72,7 +66,6 @@ function filter(button) {
           projectsData[i].imgUrl,
           projectsData[i].description
         );
-     
         break;
       }
     }
@@ -81,9 +74,8 @@ function filter(button) {
 }
 
 AddItems();
-buttons.forEach((button) => {
+projectButtons.forEach((button) => {
   button.addEventListener("mousedown", function () {
     filter(this);
-    addClick(this);
   });
 });

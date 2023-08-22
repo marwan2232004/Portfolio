@@ -76,6 +76,20 @@
   text-align: justify;
 }
 
+.cv-button {
+  background-color: #8c4fc4;
+  box-shadow: 0px 0px 17px 4px #a869de;
+  width: 180px;
+  margin-top: 40px;
+} 
+.cv-button:hover {
+  background-color:#8B00FF;
+  box-shadow: 0px 0px 24px 1px rgba(139, 0, 255, 1);
+}
+
+
+
+
 /*----------------------------------------Media Queries-------------------------------*/
 
 /* lg */
@@ -92,6 +106,9 @@
   }
   .intro {
     font-size: 0.8rem;
+  }
+  .navi-elements {
+    margin-right: 35px;
   }
 }
 

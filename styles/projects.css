@@ -115,18 +115,12 @@
   margin: 70px 0px;
   gap:40px;
 }
-.button {
-  border-radius: 20px;
-  padding: 15px;
+.project-button {
   background-color: #8c4fc4;
-  border: none; 
-  color:whitesmoke;
-  font-size: large;
-  font-weight: 600;
   box-shadow: 0px 0px 17px 4px rgba(168, 105, 222, 1);
-  transition: all .8s ease-in-out;
+
 } 
-.button:hover {
+.project-button:hover {
   background-color:#A31A74;
   box-shadow: 0px 0px 20px 4px rgba(254, 15, 115, 1);
 }

@@ -88,6 +88,10 @@ body::-webkit-scrollbar-thumb {
   .container {
     max-width: 640px;
   }
+  body::-webkit-scrollbar {
+   display: none ;
+  }
+   
 }
 
 /* sm */

@@ -82,6 +82,9 @@
           technologies and getting an internship to extend my knowledge. I hope
           you like my work.
         </div>
+        <a href="My Resume.pdf" download="MY Resume.pdf"
+          ><button class="cv-button button">Download CV</button></a
+        >
       </div>
       <div class="photo fade">
         <img src="images/Photo-min.png" loading="lazy" alt="Marwan Alhameedy" />
@@ -200,13 +203,13 @@
         <h2 class="underline-header">Projects</h2>
       </div>
       <div class="buttons">
-        <button class="button">All</button>
-        <button class="button">Website</button>
-        <button class="button">Mobile App</button>
-        <button class="button">UI/UX Design</button>
-        <button class="button">Simulator</button>
-        <button class="button">AI</button>
-        <button class="button">C++</button>
+        <button class="button project-button">All</button>
+        <button class="button project-button">Website</button>
+        <button class="button project-button">Mobile App</button>
+        <button class="button project-button">UI/UX Design</button>
+        <button class="button project-button">Simulator</button>
+        <button class="button project-button">AI</button>
+        <button class="button project-button">C++</button>
       </div>
       <div class="project-grid"></div>
     </section>
@@ -216,8 +219,7 @@
       <div class="header">
         <h2 class="underline-header">Testimonials</h2>
       </div>
-      <div class="testimonials-grid">
-      </div>
+      <div class="testimonials-grid"></div>
     </section>
     <!------------------------------------------------------------------------------------->
     <!-------------------------------------Contact----------------------------------------->
@@ -328,6 +330,16 @@
     <script type="text/javascript" src="src/testimonials.js"></script>
     <script type="text/javascript" src="src/script.js"></script>
     <script type="text/javascript" src="src/mobile-nav.js"></script>
-    
+    <!-- ! The following is from vanilla-tilt.js it also has a npm package but i didn't use it is the only one i will use-->
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        perspective: 2500,
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
   </body>
 </html>
