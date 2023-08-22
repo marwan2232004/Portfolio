@@ -1,3 +1,4 @@
+const personalData =["Marwan Alhameedy","A Designer","A WebDeveloper","Computer Engineer"];
 const servicesData = {
   figma: ["Figma", "UI/UX design"],
   arduino: ["Arduino", "Smart garage", "Line follower robot"],

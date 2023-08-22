@@ -15,11 +15,11 @@
 .navigation {
   align-items: center;
 }
-.navigation a{
+.navigation a {
   cursor: pointer;
 }
 .navi-elements {
-  color: #8C4FC4;
+  color: #8c4fc4;
   margin-right: 60px;
   font-size: 1.5em;
   font-weight: 800;
@@ -75,21 +75,54 @@
   font-weight: 450;
   text-align: justify;
 }
-
+.autoType {
+  background-image: linear-gradient(
+    to right,
+    rgb(164, 76, 202),
+    rgb(105, 33, 230),
+    rgb(128, 23, 177)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  animation: movingBackground 3s linear infinite;
+  background-size: 200%;
+}
 .cv-button {
   background-color: #8c4fc4;
   box-shadow: 0px 0px 17px 4px #a869de;
   width: 180px;
   margin-top: 40px;
-} 
+}
 .cv-button:hover {
-  background-color:#8B00FF;
+  background-color: #8b00ff;
   box-shadow: 0px 0px 24px 1px rgba(139, 0, 255, 1);
 }
-
-
-
-
+.cv-a {
+  width: 180px;
+}
+.blinkingBar {
+  animation: blinkBar 1.5s infinite ease-in-out;
+}
+@keyframes movingBackground {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+@keyframes blinkBar {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 /*----------------------------------------Media Queries-------------------------------*/
 
 /* lg */
@@ -163,10 +196,14 @@
   .intro {
     font-size: 0.7rem;
   }
+  .cv-button,.cv-a {
+    width: 150px;
+    font-size: 1rem;
+  }
 }
 /* 2xs */
 @media (max-width: 375px) {
   .name {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
