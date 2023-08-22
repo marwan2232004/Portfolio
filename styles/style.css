@@ -34,6 +34,7 @@ body {
     #88a9e5
   );
   width: 100%;
+  overflow-x: hidden;
 }
 .container {
   max-width: 1536px;

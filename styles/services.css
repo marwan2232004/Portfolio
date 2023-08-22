@@ -1,98 +1,254 @@
+.tracker {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+}
+#obj6 {
+  background: #00fff0;
+  box-shadow: 0px 0px 32px 4px rgba(0, 255, 240, 1);
+}
+#obj5 {
+  background: #ca34ff;
+  box-shadow: 0px 0px 32px 4px rgba(202, 52, 255, 1);
+}
+#obj4 {
+  background: #d8d8d8;
+  box-shadow: 0px 0px 32px 5px rgba(216, 216, 216, 1);
+}
+#obj3 {
+  background: #3787ff;
+  box-shadow: 0px 0px 33px 6px rgb(55, 135, 255);
+}
+#obj2 {
+  background: #00B3FD;
+  box-shadow: 0px 00px 32px 2px rgba(0, 179, 253, 1);
+}
+#obj1 {
+  background: #fe0f73;
+  box-shadow: 0px 0px 32px 2px rgba(254, 15, 115, 1);
+}
+
+.svg-container {
+  width: 438px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 46.2%;
+  transform: translate(-50%, -50%);
+  z-index: -10;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
 /*----------------------------------Services------------------------------------*/
+.services ul {
+   font-weight: 500;
+   text-align: center;
+   list-style-position: inside;
+}
+.services li {
+  margin: auto;
+  font-size: .7rem;
+  padding-left: 5px;
+}
 .services {
   padding: 10px;
 }
-.cards {
+.circles {
+  position: relative;
   display: grid;
-  gap: 100px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   justify-content: center;
   align-items: center;
-  padding: 50px;
   margin-bottom: 70px;
 }
-.title,
-.icons {
-  text-align: center;
+.circles .circle img {
+  width: 75px;
+  height: auto;
+  cursor: pointer;
 }
-.title {
-  color: #08a396;
-  font-weight: 650;
-  font-size: 30px;
+.circle,
+.brain,
+.blink-animation,
+.scale-animation {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
-.description {
-  font-size: 20px;
-  font-weight: 500;
-  color: #485759;
-  padding: 30px;
-}
-.icons img {
-  width: 160px;
-  height: 160px;
-  margin: 20px 0px;
-  transition-delay: 0.2s;
-  transition: transform 0.5s ease-in-out;
-}
-.card {
-  /**to allow the card to make transition while making the animation*/
-  /*?Also because it seems that i cant make animation and transition on the same element*/
-  height: 560px;
-  border-radius: 30px;
-  box-shadow: 0 5px 25px rgba(0 227 255 / 35%);
-  background-color: #ebf8f9;
-  transition: transform 0.5s ease-in-out;
-}
-.card:hover .icons img {
-  transform: scale(1.2);
-}
-.card:hover {
-  transform: scale(1.1);
-  box-shadow: 0 5px 25px rgba(0 227 255 / 95%);
+.brain {
+  grid-column: 2 / span 1;
+  justify-self: center;
+  background-image: radial-gradient(
+    circle,
+    #e0ffb0,
+    #a9ce84,
+    #749f5a,
+    #417233,
+    #07480f
+  );
+  width: 150px;
+  height: 150px;
+  margin-left: 1px;
+  animation: blink7 2s ease-in-out infinite;
+  cursor: default;
 }
 
+.figma {
+  grid-column: 1 / span 3;
+  justify-self: center;
+  align-self: end;
+  background-image: radial-gradient(
+    circle,
+    #ecdae4,
+    #d0a8be,
+    #b47898,
+    #984772,
+    #7a064d
+  );
+}
+.circles .figma img {
+  width: 50px;
+  height: auto;
+}
+.figmaShadow {
+  box-shadow: 0px 0px 28px -2px rgba(254, 15, 115, 1);
+}
+
+.coding {
+  grid-column: 1 / span 1;
+  justify-self: end;
+  background-image: radial-gradient(
+    circle,
+    #dae6ec,
+    #a6bece,
+    #7497b1,
+    #457195,
+    #064d7a
+  );
+}
+.codingShadow {
+  box-shadow: 0px 0px 33px 6px rgba(69, 196, 251, 1);
+}
+.arduino {
+  grid-column: 3 / span 1;
+  justify-self: start;
+  background-image: radial-gradient(
+    circle,
+    #b0ffff,
+    #89d9d8,
+    #63b5b2,
+    #3d918d,
+    #0a6f6a
+  );
+  margin-left: 1px;
+}
+.arduinoShadow {
+  box-shadow: 0px 0px 16px 2px #00fff0;
+}
+.code {
+  grid-column: 1 / span 1;
+  justify-self: end;
+  background-image: radial-gradient(
+    circle,
+    #bec0c9,
+    #9398b7,
+    #6a72a3,
+    #414d8f,
+    #062a7a
+  );
+}
+.codeShadow {
+  box-shadow: 0px 0px 45px -1px #3787ff;
+}
+.github {
+  grid-column: 3 / span 1;
+  justify-self: start;
+  background-image: radial-gradient(
+    circle,
+    #e0c4f8,
+    #bb96d9,
+    #9769bb,
+    #733c9c,
+    #4f067e
+  );
+  margin-left: 1px;
+}
+.githubShadow {
+  box-shadow: 0px 0px 24px 0px rgba(202, 52, 255, 1);
+}
+.react {
+  grid-column: 1 / span 3;
+  justify-self: center;
+  align-self: start;
+  background-image: radial-gradient(
+    circle,
+    #daebec,
+    #b3c2c3,
+    #8e9a9b,
+    #6b7575,
+    #495151
+  );
+}
+.reactShadow {
+  box-shadow: 0px 0px 30px 4px #d8d8d8;
+}
+.scale-animation {
+  transition: transform 1s ease-in-out;
+}
+.figma:hover .scale-animation,
+.coding:hover .scale-animation,
+.arduino:hover .scale-animation,
+.code:hover .scale-animation,
+.github:hover .scale-animation,
+.react:hover .scale-animation {
+  transform: scale(1.1);
+}
 /*------------------------------------------------------------------------------*/
 /*----------------------------------------Media Queries-------------------------------*/
 
 /* 2xl */
 /* @media (max-width: 1536px) {
- 
-} */
+   
+  } */
 
 /* xl */
 @media (max-width: 1280px) {
-  .cards {
-    gap: 40px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
-    padding: 30px;
-  }
+ .circles  {
+   transform: scale(.9);
+ }
 }
 
 /* lg */
 /* @media (max-width: 1024px) {
-
-} */
+  
+  } */
 
 /* md */
 @media (max-width: 768px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-  }
+  
 }
 
 /* sm */
 /* @media (max-width: 640px) {
-  
-} */
+    
+  } */
 
 /* xs */
 @media (max-width: 475px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
-  }
+ 
 }
 
 @media (max-width: 375px) {
-  .cards {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-  }
+ 
 }

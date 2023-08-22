@@ -16,11 +16,8 @@
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(6.8px);
-  -webkit-backdrop-filter: blur(6.8px);
   border: 1px solid rgba(255, 255, 255, 0.3);
 
-  -webkit-box-shadow: 0px 0px 12px 4px rgba(63, 0, 255, 0.52);
-  -moz-box-shadow: 0px 0px 12px 4px rgba(63, 0, 255, 0.52);
   box-shadow: 0px 0px 12px 4px rgba(63, 0, 255, 0.52);
 }
 .input-control {
@@ -32,6 +29,7 @@
   margin-bottom: 60px;
   padding-bottom: 5px;
   font-size: 1.1rem;
+  cursor: pointer;
 }
 .input-box {
   position: relative;
@@ -43,6 +41,7 @@
   left: 0;
   top: -17px;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .input-control:focus + .label-control {
@@ -65,6 +64,7 @@ textarea {
   resize: none;
   margin-top: 15px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .submit {
   width: 100%;
@@ -130,6 +130,13 @@ textarea {
 }
 .red {
   border: 3px solid red;
+}
+.inputIcon{
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem; 
+  top:0;
+  right: 0;
 }
 /*----------------------------------------Media Queries-------------------------------*/
 

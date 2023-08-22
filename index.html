@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="styles/hero.css" />
     <link rel="stylesheet" type="text/css" href="styles/services.css" />
     <link rel="stylesheet" type="text/css" href="styles/projects.css" />
+    <link rel="stylesheet" type="text/css" href="styles/testimonials.css" />
     <link rel="stylesheet" type="text/css" href="styles/contact.css" />
   </head>
   <body>
@@ -38,14 +39,19 @@
           <li><a class="mobile-nav-link" href="#services">Services</a></li>
           <li><a class="mobile-nav-link" href="#projects">Projects</a></li>
           <li><a class="mobile-nav-link" href="#contact">Contact</a></li>
+          <li>
+            <a class="mobile-nav-link" href="#testimonials">Testimonials</a>
+          </li>
           <li class="mobile-nav-line"></li>
         </ul>
       </nav>
     </div>
     <!-- ----------------- -->
     <!---------------------------------Hero---------------------------------------->
-
     <section class="hero main-section container" id="about">
+      <!-------------- Backgound Icons --------------------->
+      <div class="aboutIcons"></div>
+      <!-- ----------------------------------------------- -->
       <div class="bar container">
         <nav class="navigation">
           <a href="#about" class="navi-elements underline-hover-animation"
@@ -60,6 +66,11 @@
           <a href="#contact" class="navi-elements underline-hover-animation"
             >Contact</a
           >
+          <a
+            href="#testimonials"
+            class="navi-elements underline-hover-animation"
+            >Testimonials</a
+          >
         </nav>
       </div>
       <div class="personal-info reload-slide-left">
@@ -73,7 +84,7 @@
         </div>
       </div>
       <div class="photo fade">
-        <img src="images/Photo.png" alt="Marwan Alhameedy" />
+        <img src="images/Photo-min.png" loading="lazy" alt="Marwan Alhameedy" />
       </div>
     </section>
     <!---------------------------------------------------------------------------------->
@@ -82,51 +93,101 @@
       <div class="header">
         <h2 class="underline-header">Services</h2>
       </div>
-      <div class="cards">
-        <div class="js-ordered-scroll">
-          <div class="card">
-            <div class="icons">
-              <img
-                src="images/icons8-arduino.svg"
-                alt="Arduino"
-                title="Arduino"
-              />
-            </div>
-            <h2 class="title">Arduino</h2>
-            <div class="description">
-              I have good knowledge with Arduino and how to make efficient code
-              to run on it. I took a course in robotics in beta academy and we
-              made good projects.
+      <div class="circles">
+        <div class="svg-container">
+          <div id="obj1" class="tracker"></div>
+          <div id="obj2" class="tracker"></div>
+          <div id="obj3" class="tracker"></div>
+          <div id="obj4" class="tracker"></div>
+          <div id="obj5" class="tracker"></div>
+          <div id="obj6" class="tracker"></div>
+          <svg
+            width="537"
+            height="487"
+            viewBox="0 0 537 487"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M280 206C280 206 331 159 327 126C323 93 243.5 127.5 248 93C252.5 58.5 334 78 333 47C332 16 302 1.5 302 1.5"
+              stroke="#880A3F"
+              stroke-width="5"
+              id="figma"
+            />
+            <path
+              d="M240 221C240 221 220 154 188 143.5C156 133 144.5 186 111.5 174.5C78.5 163 111.5 100 87.5 90.5C63.5 81 71 147 42 150C13 153 1.5 119.5 1.5 119.5"
+              stroke="#106488"
+              stroke-width="5"
+              id="coding"
+            />
+            <path
+              d="M234 288C234 288 198.5 370.5 162 373.5C125.5 376.5 146.5 290.5 113.5 300C80.5 309.5 99 373.5 72 397.5C45 421.5 2 403 2 403"
+              stroke="#074097"
+              stroke-width="5"
+              id="code"
+            />
+            <path
+              d="M274 306C274 306 305 345.5 299 374.5C293 403.5 234.5 393.5 234.5 420C234.5 446.5 299 436 305 455.5C311 475 279 497 279 497"
+              stroke="#807385"
+              stroke-width="5"
+              id="react"
+            />
+            <path
+              d="M309 284C309 284 324 347.5 353 357C382 366.5 385.991 343.238 425.5 319.5C465.009 295.762 465 362.5 482.5 392C500 421.5 536 392 536 392"
+              stroke="#6E0793"
+              stroke-width="5"
+              id="github"
+            />
+            <path
+              d="M328 242C328 242 347 177 377.5 170.5C408 164 416.5 195 451.5 201.5C486.5 208 471.5 128 492.5 115.5C513.5 103 534 110.5 534 110.5"
+              stroke="#065651"
+              stroke-width="5"
+              id="arduino"
+            />
+          </svg>
+        </div>
+        <div class="circle figma">
+          <div class="scale-animation figma">
+            <div class="blink-animation figmaShadow">
+              <img src="images/Services/figma.svg" loading="lazy" />
             </div>
           </div>
         </div>
-        <div class="js-ordered-scroll">
-          <div class="card">
-            <div class="icons">
-              <img src="images/code.png" alt="Coding" title="Coding" />
-            </div>
-            <h2 class="title">Programming</h2>
-            <div class="description">
-              I'm good at writing effective code with C/C++, Python. In
-              addition, I am great with data structures and algorithms, STL,
-              OOP. I am interested in problem solving.
+        <div class="circle coding">
+          <div class="scale-animation coding">
+            <div class="blink-animation codingShadow">
+              <img src="images/Services/coding.png" loading="lazy" />
             </div>
           </div>
         </div>
-        <div class="js-ordered-scroll">
-          <div class="card">
-            <div class="icons">
-              <img
-                src="images/coding.png"
-                alt="Web Development"
-                title="Web Development"
-              />
+        <div class="circle arduino">
+          <div class="scale-animation arduino">
+            <div class="blink-animation arduinoShadow">
+              <img src="images/Services/arduino.svg" loading="lazy" />
             </div>
-            <h2 class="title">Web Development</h2>
-            <div class="description">
-              I just started with Web because I found it is interesting to know
-              how websites work. Right now I can deal with HTML, CSS and
-              JavaScript.
+          </div>
+        </div>
+        <div class="brain">
+          <img src="images/Services/brain.svg" loading="lazy" />
+        </div>
+        <div class="circle code">
+          <div class="scale-animation code">
+            <div class="blink-animation codeShadow">
+              <img src="images/Services/code.png" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="circle github">
+          <div class="scale-animation github">
+            <div class="blink-animation githubShadow">
+              <img src="images/Services/github.svg" loading="lazy" />
+            </div>
+          </div>
+        </div>
+        <div class="circle react">
+          <div class="scale-animation react">
+            <div class="blink-animation reactShadow">
+              <img src="images/Services/react.svg" loading="lazy" />
             </div>
           </div>
         </div>
@@ -138,91 +199,24 @@
       <div class="header">
         <h2 class="underline-header">Projects</h2>
       </div>
-      <div class="project-grid">
-        <div class="box js-closing-window">
-          <div class="fit">
-            <div class="image">
-              <img
-                src="images/car.png"
-                alt="Paint Project"
-                title="Paint Project"
-                class="project-images"
-              />
-            </div>
-            <div class="layout">
-              <div class="link-container">
-                <a
-                  href="https://github.com/marwan2232004/PaintProject2"
-                  target="_blank"
-                  class="preview"
-                >
-                  <div class="bottom-model">
-                    <span class="preview-text">Preview </span>
-                    <img
-                      src="images/external-link.svg"
-                      alt="Paint Project"
-                      title="Paint Project"
-                      class="external-link-icon"
-                    />
-                  </div>
-                </a>
-              </div>
-              <div class="description-container position">
-                <div class="title">Paint for Kids</div>
-                <div class="description">
-                  This program makes it possible for children to unleash the
-                  power of their imagination. Here, they can draw shapes from
-                  the toolbar, resize them, or switch their position. In
-                  addition, it has a play mode to learn about color and shape in
-                  a fun manner. They can record the progress and continue at any
-                  time also there is a sound to tell them which shape or color
-                  they chose and more options for you to try.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="box js-closing-window">
-          <div class="fit">
-            <div class="image">
-              <img
-                src="images/process-scheduler.png"
-                alt="Paint Project"
-                title="Paint Project"
-                class="project-images"
-              />
-            </div>
-            <div class="layout">
-              <div class="link-container">
-                <a
-                  href="https://github.com/marwan2232004/DS-project/tree/main"
-                  target="_blank"
-                  class="preview"
-                >
-                  <div class="bottom-model">
-                    <span class="preview-text">Preview </span>
-                    <img
-                      src="images/external-link.svg"
-                      alt="Paint Project"
-                      title="Paint Project"
-                      class="external-link-icon"
-                    />
-                  </div>
-                </a>
-              </div>
-              <div class="description-container position">
-                <div class="title">Process Scheduler</div>
-                <div class="description">
-                  This is a process scheduler project that allows us to simulate
-                  how multiprocessor CPU work. It contains some algorithm like
-                  "First Come First Serve","Shortest Job First","Round Robin".
-                  Also, it has some features like handling overheat of a
-                  processor.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="buttons">
+        <button class="button">All</button>
+        <button class="button">Website</button>
+        <button class="button">Mobile App</button>
+        <button class="button">UI/UX Design</button>
+        <button class="button">Simulator</button>
+        <button class="button">AI</button>
+        <button class="button">C++</button>
+      </div>
+      <div class="project-grid"></div>
+    </section>
+    <!----------------------------------------------------------------------------------->
+    <!-------------------------------------Testimonials-------------------------------------->
+    <section class="testimonials main-section container" id="testimonials">
+      <div class="header">
+        <h2 class="underline-header">Testimonials</h2>
+      </div>
+      <div class="testimonials-grid">
       </div>
     </section>
     <!------------------------------------------------------------------------------------->
@@ -236,29 +230,32 @@
           <h2 class="hire">Hire/Inquiry</h2>
           <div class="media">
             <div class="information">
-              <img src="images/phone-solid.svg" />
+              <img src="images/Contact/phone-solid.svg" loading="lazy" />
               +201093165634
             </div>
             <div class="information">
-              <img src="images/gmail.svg" />marwan2232004@gmail.com
+              <img
+                src="images/Contact/gmail.svg"
+                loading="lazy"
+              />marwan2232004@gmail.com
             </div>
             <div class="information">
-              <img src="images/location-dot-solid.svg" />
+              <img src="images/Contact/location-dot-solid.svg" loading="lazy" />
               Giza, Egypt
             </div>
             <div class="media-icons">
               <a
                 href="https://www.facebook.com/profile.php?id=100010059756988"
                 target="_blank"
-                ><img src="images/facebook.svg"
+                ><img src="images/Contact/facebook.svg" loading="lazy"
               /></a>
               <a
                 href="https://www.linkedin.com/in/marwan-alhameedy-b64480277/"
                 target="_blank"
-                ><img src="images/linkedin.svg"
+                ><img src="images/Contact/linkedin.svg" loading="lazy"
               /></a>
               <a href="https://github.com/marwan2232004" target="_blank"
-                ><img src="images/github.svg"
+                ><img src="images/Contact/github.svg" loading="lazy"
               /></a>
             </div>
           </div>
@@ -280,6 +277,18 @@
                 required
               />
               <label for="name" class="label-control">Name </label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="inputIcon"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z"
+                  clipRule="evenodd"
+                />
+              </svg>
             </div>
             <div class="input-box">
               <input
@@ -291,6 +300,19 @@
                 required
               />
               <label for="email" class="label-control">Email </label>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="inputIcon"
+              >
+                <path
+                  d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"
+                />
+                <path
+                  d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"
+                />
+              </svg>
             </div>
             <label class="message">Message</label>
             <textarea name="Message"></textarea>
@@ -299,7 +321,13 @@
         </div>
       </div>
     </section>
+    <script type="text/javascript" src="src/data.js"></script>
+    <script type="text/javascript" src="src/utiles.js"></script>
+    <script type="text/javascript" src="src/services.js"></script>
+    <script type="text/javascript" src="src/projects.js"></script>
+    <script type="text/javascript" src="src/testimonials.js"></script>
     <script type="text/javascript" src="src/script.js"></script>
     <script type="text/javascript" src="src/mobile-nav.js"></script>
+    
   </body>
 </html>
