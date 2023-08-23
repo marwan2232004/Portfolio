@@ -330,3 +330,18 @@
     left: 40%;
   }
 }
+@media (max-width: 320px) {
+  .circles {
+    transform: scale(0.45);
+  }
+  .coding-position,
+  .code-position {
+    left: -40%;
+  }
+  .svg-container {
+    left: 140px;
+  }
+  .brain {
+    left: 37%;
+  }
+}
