@@ -1,3 +1,6 @@
+/* ! Note about this section. In the beginning this section was made with grid but it was difficult 
+!    to make responsive because of the lines which i had to redesign for each media so i decided to make it position absolute  */
+
 .tracker {
   width: 10px;
   height: 10px;
@@ -84,8 +87,8 @@
   cursor: pointer;
 }
 .brain {
-  grid-column: 2 / span 1;
-  justify-self: center;
+  /* grid-column: 2 / span 1;
+  justify-self: center; */
   background-image: radial-gradient(
     circle,
     #e0ffb0,
@@ -104,9 +107,9 @@
   transform: translate(-50%, -50%);
 }
 .figma {
-  grid-column: 1 / span 3;
+  /* grid-column: 1 / span 3;
   justify-self: center;
-  align-self: end;
+  align-self: end; */
   background-image: radial-gradient(
     circle,
     #ecdae4,
@@ -128,8 +131,8 @@
   box-shadow: 0px 0px 28px -2px rgba(254, 15, 115, 1);
 }
 .coding {
-  grid-column: 1 / span 1;
-  justify-self: end;
+  /* grid-column: 1 / span 1;
+  justify-self: end; */
   background-image: radial-gradient(
     circle,
     #dae6ec,
@@ -147,8 +150,8 @@
   box-shadow: 0px 0px 33px 6px rgba(69, 196, 251, 1);
 }
 .arduino {
-  grid-column: 3 / span 1;
-  justify-self: start;
+  /* grid-column: 3 / span 1;
+  justify-self: start; */
   background-image: radial-gradient(
     circle,
     #b0ffff,
@@ -167,8 +170,8 @@
   box-shadow: 0px 0px 16px 2px #00fff0;
 }
 .code {
-  grid-column: 1 / span 1;
-  justify-self: end;
+  /* grid-column: 1 / span 1;
+  justify-self: end; */
   background-image: radial-gradient(
     circle,
     #bec0c9,
@@ -186,8 +189,8 @@
   box-shadow: 0px 0px 45px -1px #3787ff;
 }
 .github {
-  grid-column: 3 / span 1;
-  justify-self: start;
+  /* grid-column: 3 / span 1;
+  justify-self: start; */
   background-image: radial-gradient(
     circle,
     #e0c4f8,
@@ -206,9 +209,9 @@
   box-shadow: 0px 0px 24px 0px rgba(202, 52, 255, 1);
 }
 .react {
-  grid-column: 1 / span 3;
+  /* grid-column: 1 / span 3;
   justify-self: center;
-  align-self: start;
+  align-self: start; */
   background-image: radial-gradient(
     circle,
     #daebec,
@@ -262,6 +265,19 @@
   }
   .brain {
     left: 45%;
+  }
+}
+@media (max-width: 1024px) {
+  .coding-position,
+  .code-position {
+    left: 9%;
+  }
+  .arduino-position,
+  .github-position {
+    left: 85%;
+  }
+  .brain {
+    left: 43%;
   }
 }
 

@@ -10,7 +10,7 @@ let currentTime;
 
 // ! Because  of mobiles and tablets can't handle this kind of continuous calling of this function to make the dot moving
 // ! I will remove this animation from them so that the user gets a smooth experience
-const mediaQuery = window.matchMedia("(max-width: 768px)");
+const mediaQuery = window.matchMedia("(max-width: 900px)");
 
 
 
