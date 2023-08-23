@@ -75,7 +75,7 @@
   font-weight: 450;
   text-align: justify;
 }
-.autoType {
+.autoType,.blinkingBar {
   background-image: linear-gradient(
     to right,
     rgb(164, 76, 202),
@@ -83,6 +83,7 @@
     rgb(128, 23, 177)
   );
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   white-space: nowrap;
   animation: movingBackground 3s linear infinite;

@@ -23,7 +23,7 @@
   box-shadow: 0px 0px 33px 6px rgb(55, 135, 255);
 }
 #obj2 {
-  background: #00B3FD;
+  background: #00b3fd;
   box-shadow: 0px 00px 32px 2px rgba(0, 179, 253, 1);
 }
 #obj1 {
@@ -48,13 +48,13 @@
 }
 /*----------------------------------Services------------------------------------*/
 .services ul {
-   font-weight: 500;
-   text-align: center;
-   list-style-position: inside;
+  font-weight: 500;
+  text-align: center;
+  list-style-position: inside;
 }
 .services li {
   margin: auto;
-  font-size: .7rem;
+  font-size: 0.7rem;
   padding-left: 5px;
 }
 .services {
@@ -62,14 +62,8 @@
 }
 .circles {
   position: relative;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 70px;
-  /* transform: scale(.5);
-  border: solid 3px red; */
+  width: 100%;
+  height: 800px;
 }
 .circles .circle img {
   width: 75px;
@@ -80,6 +74,7 @@
 .brain,
 .blink-animation,
 .scale-animation {
+  position: absolute;
   display: flex;
   width: 100px;
   height: 100px;
@@ -104,8 +99,10 @@
   margin-left: 1px;
   animation: blink7 2s ease-in-out infinite;
   cursor: default;
+  top: 39.5%;
+  left: 45%;
+  transform: translate(-50%, -50%);
 }
-
 .figma {
   grid-column: 1 / span 3;
   justify-self: center;
@@ -119,6 +116,10 @@
     #7a064d
   );
 }
+.figma-position {
+  top: 9%;
+  left: 47%;
+}
 .circles .figma img {
   width: 50px;
   height: auto;
@@ -126,7 +127,6 @@
 .figmaShadow {
   box-shadow: 0px 0px 28px -2px rgba(254, 15, 115, 1);
 }
-
 .coding {
   grid-column: 1 / span 1;
   justify-self: end;
@@ -138,6 +138,10 @@
     #457195,
     #064d7a
   );
+}
+.coding-position {
+  top: 24%;
+  left: 27%;
 }
 .codingShadow {
   box-shadow: 0px 0px 33px 6px rgba(69, 196, 251, 1);
@@ -155,6 +159,10 @@
   );
   margin-left: 1px;
 }
+.arduino-position {
+  top: 24%;
+  left: 66%;
+}
 .arduinoShadow {
   box-shadow: 0px 0px 16px 2px #00fff0;
 }
@@ -169,6 +177,10 @@
     #414d8f,
     #062a7a
   );
+}
+.code-position {
+  top: 64%;
+  left: 27%;
 }
 .codeShadow {
   box-shadow: 0px 0px 45px -1px #3787ff;
@@ -186,6 +198,10 @@
   );
   margin-left: 1px;
 }
+.github-position {
+  top: 64%;
+  left: 66%;
+}
 .githubShadow {
   box-shadow: 0px 0px 24px 0px rgba(202, 52, 255, 1);
 }
@@ -201,6 +217,10 @@
     #6b7575,
     #495151
   );
+}
+.react-position {
+  top: 78%;
+  left: 47%;
 }
 .reactShadow {
   box-shadow: 0px 0px 30px 4px #d8d8d8;
@@ -219,16 +239,30 @@
 /*------------------------------------------------------------------------------*/
 /*----------------------------------------Media Queries-------------------------------*/
 
+/* ! I am sorry for the next code but i really did not know any way to make responsive other this one */
+/* ! Every good design comes with its down sides if you know better way please tell me as adding more services in the future will be very hard  */
+
 /* 2xl */
-/* @media (max-width: 1536px) {
-   
-  } */
+@media (max-width: 1536px) {
+  .coding-position {
+    top: 24%;
+    left: 25%;
+  }
+}
 
 /* xl */
 @media (max-width: 1280px) {
- .circles  {
-   transform: scale(.5);
- }
+  .coding-position,
+  .code-position {
+    left: 7%;
+  }
+  .arduino-position,
+  .github-position {
+    left: 85%;
+  }
+  .brain {
+    left: 43%;
+  }
 }
 
 /* lg */
@@ -238,7 +272,17 @@
 
 /* md */
 @media (max-width: 768px) {
-  
+  .circles {
+    transform: scale(0.8);
+  }
+  .coding-position,
+  .code-position {
+    left: 0;
+  }
+  .arduino-position,
+  .github-position {
+    left: 90%;
+  }
 }
 
 /* sm */
@@ -248,9 +292,41 @@
 
 /* xs */
 @media (max-width: 475px) {
- 
+  .circles {
+    transform: scale(0.6);
+  }
+  .coding-position,
+  .code-position {
+    left: -30%;
+  }
+  .arduino-position,
+  .github-position {
+    left: 110%;
+  }
+  .svg-container {
+    left: 170px;
+  }
+  .figma-position,
+  .react-position {
+    left: 45%;
+  }
+  .brain {
+    left: 37%;
+  }
 }
 
 @media (max-width: 375px) {
- 
+  .circles {
+    transform: scale(0.5);
+  }
+  .arduino-position,
+  .github-position {
+    left: 120%;
+  }
+  .figma-position {
+    left: 48%;
+  }
+  .brain {
+    left: 40%;
+  }
 }
