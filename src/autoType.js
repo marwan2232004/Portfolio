@@ -33,4 +33,10 @@ function autoTypeHandler(index) {
     addCharacter(personalData[0], 0, true);
   }
 }
-autoTypeHandler(0);
+if (mediaQuery.matches) {
+  autoType.innerHTML = personalData[0];
+}
+else {
+  autoTypeHandler(0);
+}
+

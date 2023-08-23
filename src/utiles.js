@@ -1,3 +1,8 @@
+// ! Because  of mobiles and tablets can't handle this kind of continuous calling of this function to make the dot moving
+// ! I will remove this animation from them so that the user gets a smooth experience
+const mediaQuery = window.matchMedia("(max-width: 900px)");
+
+
 const main_sections = document.querySelectorAll(".main-section");
 const buttons = Object.values(document.querySelectorAll(".button"));
 const opacity_0 = (elements) => {
