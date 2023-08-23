@@ -254,21 +254,16 @@
 @media (max-width: 1280px) {
   .coding-position,
   .code-position {
-    left: 7%;
+    left: 19%;
   }
   .arduino-position,
   .github-position {
-    left: 85%;
+    left: 75%;
   }
   .brain {
-    left: 43%;
+    left: 45%;
   }
 }
-
-/* lg */
-/* @media (max-width: 1024px) {
-  
-  } */
 
 /* md */
 @media (max-width: 768px) {
@@ -282,6 +277,9 @@
   .arduino-position,
   .github-position {
     left: 90%;
+  }
+  .brain {
+    left: 43%;
   }
 }
 
