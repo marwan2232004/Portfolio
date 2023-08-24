@@ -2,6 +2,7 @@ const scroll_elements = document.querySelectorAll(".js-ordered-scroll");
 //const closingWindowElements = document.querySelectorAll(".js-closing-window");
 const submit_button = document.querySelector(".submit");
 const inputs = document.querySelectorAll(".input-control");
+const labels = Object.values(document.querySelectorAll(".label-control"));
 const textarea = document.querySelector("textarea");
 const navigation_elements = document.querySelectorAll(".navi-elements");
 opacity_0(scroll_elements);
@@ -60,6 +61,14 @@ const clear_input = () => {
     textarea.value = "";
   }
 };
+const increaseTop =(e,i)=>{
+   if(e.target.value!=""&&e.target.value[0]!=" "){
+     labels[i].style.top = "-25px";
+   }
+   else{
+    labels[i].style.top = "-8px";
+   }
+}
 const Waitforsubmission = () => {
   setTimeout(clear_input, 10);
 };
@@ -97,6 +106,8 @@ window.addEventListener("scroll", handel_Scroll_Animation);
 //window.addEventListener("scroll", handel_CWindow_Animation);
 window.addEventListener("scroll", Select);
 submit_button.addEventListener("click", Waitforsubmission);
+inputs.forEach((input,i)=>{input.addEventListener("input",(e)=>increaseTop(e,i));}
+)
 for (let i = 0; i < navigation_elements.length; i++) {
   normal = navigation_elements[i].style.color;
   navigation_elements[i].addEventListener("mouseover", Hover);

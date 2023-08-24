@@ -10,7 +10,7 @@ let currentTime;
 
 paths.forEach((path) => {
   let pathLength = path.getTotalLength();
-  path.style.strokeDasharray = pathLength + " " + pathLength;
+  path.style.strokeDasharray = pathLength ;
   path.style.strokeDashoffset = pathLength;
 });
 balls.forEach((ball) => {

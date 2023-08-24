@@ -1,4 +1,4 @@
-const personalData =["Marwan Alhameedy","A Designer","A WebDeveloper","Computer Engineer"];
+const personalData =["Marwan Alhameedy","A Designer","A WebDeveloper","Computer Engineer","Marwan Alhameedy"];
 const servicesData = {
   figma: ["Figma", "UI/UX design"],
   arduino: ["Arduino", "Smart garage", "Line follower robot"],
@@ -50,7 +50,7 @@ const styles = {
   );
 box-shadow: 0px 0px 30px 4px #d8d8d8;
 `,
-  code: `  background-image: radial-gradient(
+ coding: `  background-image: radial-gradient( 
     circle,
     #dae6ec,
     #a6bece,
@@ -60,7 +60,7 @@ box-shadow: 0px 0px 30px 4px #d8d8d8;
   );
   box-shadow: 0px 0px 33px 6px rgba(69, 196, 251, 1);
   `,
-  coding: `background-image: radial-gradient(
+  code: `background-image: radial-gradient(
     circle,
     #bec0c9,
     #9398b7,

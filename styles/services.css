@@ -52,13 +52,12 @@
 /*----------------------------------Services------------------------------------*/
 .services ul {
   font-weight: 500;
-  text-align: center;
   list-style-position: inside;
 }
 .services li {
   margin: auto;
   font-size: 0.7rem;
-  padding-left: 5px;
+  padding-left: 15px;
 }
 .services {
   padding: 10px;
@@ -104,7 +103,6 @@
   cursor: default;
   top: 39.5%;
   left: 45%;
-  transform: translate(-50%, -50%);
 }
 .figma {
   /* grid-column: 1 / span 3;
@@ -300,9 +298,16 @@
 }
 
 /* sm */
-/* @media (max-width: 640px) {
-    
-  } */
+@media (max-width: 640px) {
+      .coding-position,
+  .code-position {
+    left: -10%;
+  }
+  .arduino-position,
+  .github-position {
+    left: 100%;
+  }
+}
 
 /* xs */
 @media (max-width: 475px) {
@@ -312,10 +317,6 @@
   .coding-position,
   .code-position {
     left: -30%;
-  }
-  .arduino-position,
-  .github-position {
-    left: 110%;
   }
   .svg-container {
     left: 170px;

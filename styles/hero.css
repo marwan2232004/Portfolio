@@ -1,3 +1,4 @@
+/* ? you will notice that there are styles for blinking bar but it doesn't exist because i replaced it with the typed.js */
 /*----------------------------------Navigation Bar------------------------------------*/
 .bar {
   position: fixed;
@@ -75,7 +76,9 @@
   font-weight: 450;
   text-align: justify;
 }
-.autoType,.blinkingBar {
+.autoType,
+.blinkingBar,
+.typed-cursor {
   background-image: linear-gradient(
     to right,
     rgb(164, 76, 202),
@@ -197,7 +200,8 @@
   .intro {
     font-size: 0.7rem;
   }
-  .cv-button,.cv-a {
+  .cv-button,
+  .cv-a {
     width: 150px;
     font-size: 1rem;
   }

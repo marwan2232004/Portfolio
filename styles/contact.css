@@ -29,7 +29,7 @@
   margin-bottom: 60px;
   padding-bottom: 5px;
   font-size: 1.1rem;
-  cursor: pointer;
+  cursor: auto;
 }
 .input-box {
   position: relative;
@@ -39,13 +39,13 @@
   font-size: 1.1rem;
   position: absolute;
   left: 0;
-  top: -17px;
+  top: -8px;
   transition: 0.2s ease-in-out;
-  cursor: pointer;
+  cursor:default;
 }
 
 .input-control:focus + .label-control {
-  top: -35px;
+  top: -25px !important;
 }
 .message {
   font-weight: 500;
@@ -64,7 +64,7 @@ textarea {
   resize: none;
   margin-top: 15px;
   margin-bottom: 30px;
-  cursor: pointer;
+  cursor: auto;
 }
 .submit {
   width: 100%;
