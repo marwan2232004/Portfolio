@@ -318,6 +318,10 @@
   .code-position {
     left: -30%;
   }
+   .arduino-position,
+  .github-position {
+    left: 110%;
+  }
   .svg-container {
     left: 170px;
   }
