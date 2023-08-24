@@ -72,9 +72,9 @@ box-shadow: 0px 0px 30px 4px #d8d8d8;
   `,
   brain: {
     figma: "1",
-    code: "2",
+    coding: "2",
     arduino: "3",
-    coding: "4",
+    code: "4",
     github: "5",
     react: "6",
   },
