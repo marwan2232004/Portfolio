@@ -5,10 +5,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  min-width: 100vw;
   height: 90px;
   z-index: 999;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px) ;
   border-radius: 10px;
   top: 0;
   margin-bottom: 0;

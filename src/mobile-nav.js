@@ -23,7 +23,7 @@ function mobile_select() {
 }
 
 function mobile_select_scroll() {
-  let id = SectionInView();
+  let id = SectionInView(0);
   for (let i = 0; i < mobile_links.length; i++) {
     mobile_links[i].style.color = normal;
     if (id.toLowerCase() == mobile_links[i].innerHTML.toLowerCase()) {
